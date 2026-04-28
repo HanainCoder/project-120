@@ -3,73 +3,121 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Timely — Premium Watches</title>
+  <title>TimeCraft — Contemporary Watches</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="Timely — Curated collection of premium watches blending craftsmanship and modern design.">
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
-  <main class="min-h-screen flex items-center justify-center py-12">
-    <section class="w-full max-w-4xl bg-white rounded-2xl shadow-lg overflow-hidden ring-1 ring-gray-100">
-      <div class="flex flex-col md:flex-row">
-        <!-- Visual / Product Image -->
-        <div class="md:w-1/2 bg-gradient-to-b from-gray-100 to-white flex items-center justify-center p-8">
-          <div class="w-full max-w-md transform hover:scale-101 transition-transform">
-            <img src="https://images.unsplash.com/photo-1518441907119-1b8b3d9e02ce?auto=format&fit=crop&w=900&q=80" alt="Premium wristwatch on display" class="w-full h-auto rounded-xl shadow-md object-cover">
-            <div class="mt-4 flex items-center justify-between text-sm text-gray-500">
-              <span class="flex items-center gap-2">
-                <span class="inline-flex items-center px-2 py-1 bg-amber-50 text-amber-600 rounded-full text-xs font-medium">New Arrival</span>
-                <span>Stainless Steel • 40mm</span>
-              </span>
-              <span class="font-semibold text-gray-900">$349</span>
+<body class="bg-gradient-to-b from-gray-50 to-white min-h-screen flex items-start justify-center py-12">
+  <section class="w-[92vw] max-w-5xl bg-white rounded-2xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-8" aria-labelledby="hero-heading">
+    <div class="flex flex-col justify-between">
+      <header class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-gray-900 text-white rounded-md flex items-center justify-center font-semibold">TC</div>
+          <div>
+            <h3 class="text-sm text-gray-500">TimeCraft</h3>
+            <p class="text-xs text-gray-400 -mt-1">Modern watches & heritage design</p>
+          </div>
+        </div>
+        <nav class="hidden sm:flex items-center gap-4 text-sm text-gray-600">
+          <a href="#" class="hover:text-gray-900">Collections</a>
+          <a href="#" class="hover:text-gray-900">About</a>
+          <a href="#" class="hover:text-gray-900">Support</a>
+        </nav>
+      </header>
+
+      <main class="mt-6">
+        <h1 id="hero-heading" class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+          Precision Crafted Watches — Timeless by Design
+        </h1>
+        <p class="mt-4 text-gray-600 max-w-prose">
+          Discover a curated selection of mechanical and quartz timepieces with refined details, reliable movements, and enduring style. Designed for everyday wear and heirloom moments.
+        </p>
+
+        <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
+          <a href="#" class="inline-flex items-center justify-center px-5 py-3 bg-gray-900 text-white rounded-lg shadow hover:bg-black transition">
+            Shop New Arrivals
+          </a>
+          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50 transition">
+            Explore Collections
+          </a>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-gray-700 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1"></path></svg>
+            <div>
+              <p class="text-sm font-medium text-gray-900">Accurate Movements</p>
+              <p class="text-xs text-gray-500">Swiss and Japanese options</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-gray-700 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M12 7v14"></path></svg>
+            <div>
+              <p class="text-sm font-medium text-gray-900">Durable Materials</p>
+              <p class="text-xs text-gray-500">Sapphire glass & stainless steel</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-gray-700 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div>
+              <p class="text-sm font-medium text-gray-900">1-Year Warranty</p>
+              <p class="text-xs text-gray-500">Trusted support & returns</p>
             </div>
           </div>
         </div>
 
-        <!-- Content / CTA -->
-        <div class="md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
-          <header class="mb-4">
-            <div class="flex items-center justify-between">
-              <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900">Timely — Crafted Watches</h1>
-              <div class="text-xs text-gray-400">Since 2024</div>
-            </div>
-            <p class="mt-3 text-sm text-gray-600">Precision engineering meets elegant design. Curated collection of mechanical and quartz watches built for everyday wear and special moments.</p>
-          </header>
+        <form class="mt-6 flex items-center gap-3" onsubmit="event.preventDefault()">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" type="email" placeholder="Sign up for restocks & offers" class="flex-1 px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200" />
+          <button class="px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Subscribe</button>
+        </form>
 
-          <ul class="mt-6 space-y-3">
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l2 2"></path><path stroke-linecap="round" stroke-linejoin="round" d="M20.5 12A8.5 8.5 0 1 1 3.5 12a8.5 8.5 0 0 1 17 0z"></path></svg>
-              <div>
-                <div class="text-sm font-semibold text-gray-900">Swiss-inspired movements</div>
-                <div class="text-sm text-gray-500">Reliable timekeeping with meticulous finishing.</div>
-              </div>
-            </li>
+        <p class="mt-4 text-xs text-gray-400">
+          Free shipping on orders over $150 • Easy 30-day returns
+        </p>
+      </main>
 
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3M19.07 19.07l-1.41-1.41M6.34 6.34 4.93 4.93m12.14 0-1.41 1.41M6.34 17.66l-1.41 1.41"></path></svg>
-              <div>
-                <div class="text-sm font-semibold text-gray-900">Durable materials</div>
-                <div class="text-sm text-gray-500">Sapphire glass, water resistance, and premium straps.</div>
-              </div>
-            </li>
+      <footer class="mt-6 text-xs text-gray-400">
+        <p>© <span id="year"></span> TimeCraft. All rights reserved.</p>
+      </footer>
+    </div>
 
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-sky-500 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 12h18M3 17h18"></path></svg>
-              <div>
-                <div class="text-sm font-semibold text-gray-900">Curated collections</div>
-                <div class="text-sm text-gray-500">Timeless classics and modern designs for every wrist.</div>
-              </div>
-            </li>
-          </ul>
+    <div class="relative flex items-center justify-center">
+      <img src="https://images.unsplash.com/photo-1519741491631-77fa6d2eea39?auto=format&fit=crop&w=900&q=80" alt="Close up of a luxury wristwatch with leather strap" class="w-full h-80 object-cover rounded-lg shadow-inner" />
 
-          <div class="mt-6 flex items-center gap-4">
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 bg-gray-900 text-white text-sm font-semibold rounded-lg shadow hover:bg-gray-800 transition">Shop Now</a>
-            <a href="#" class="inline-flex items-center px-4 py-3 border border-gray-200 text-sm rounded-lg text-gray-700 hover:bg-gray-50 transition">View Collection</a>
+      <div class="absolute bottom-6 left-6 right-6 flex gap-3 items-end">
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-md flex items-center gap-3 w-1/3">
+          <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=200&q=60" alt="Classic Silver Watch" class="w-12 h-12 rounded-md object-cover"/>
+          <div>
+            <p class="text-sm font-medium text-gray-900">Heritage Silver</p>
+            <p class="text-xs text-gray-500">$249</p>
           </div>
+          <a href="#" class="ml-auto text-sm text-blue-600 font-medium">View</a>
+        </div>
 
-          <p class="mt-6 text-xs text-gray-400">Free shipping & returns • 2-year warranty • Secure payments</p>
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-md flex items-center gap-3 w-1/3">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=200&q=60" alt="Modern Black Watch" class="w-12 h-12 rounded-md object-cover"/>
+          <div>
+            <p class="text-sm font-medium text-gray-900">Urban Noir</p>
+            <p class="text-xs text-gray-500">$319</p>
+          </div>
+          <a href="#" class="ml-auto text-sm text-blue-600 font-medium">View</a>
+        </div>
+
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-md flex items-center gap-3 w-1/3">
+          <img src="https://images.unsplash.com/photo-1533007666426-3f1f6a8b9b42?auto=format&fit=crop&w=200&q=60" alt="Sport Chronograph Watch" class="w-12 h-12 rounded-md object-cover"/>
+          <div>
+            <p class="text-sm font-medium text-gray-900">Enduro Chrono</p>
+            <p class="text-xs text-gray-500">$389</p>
+          </div>
+          <a href="#" class="ml-auto text-sm text-blue-600 font-medium">View</a>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <script>
+    // Small script to set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
